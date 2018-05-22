@@ -81,11 +81,10 @@ hr {
 #menu.navbar-default {
 	background-color: #333;
 	border-color: rgba(231, 231, 231, 0);
-	padding: 0 !important;
 	padding: 15px 0 !important;
 }
 #menu a.navbar-brand {
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 600;
 	color: #eee;
 }
@@ -95,9 +94,9 @@ hr {
 	font-size: 15px;
 	font-weight: 400;
 	letter-spacing: 1px;
-	padding: 8px 2px;
+
 	border-radius: 0;
-	margin: 9px 20px 0 20px;
+	margin: 0 5px 0 5px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #6aaf08;
@@ -118,7 +117,7 @@ hr {
 	background-color: #6aaf08;
 }
 .section-title {
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 }
 .section-title p {
 	font-size: 18px;
@@ -149,7 +148,6 @@ hr {
 }
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;
-	outline-offset: none;
 }
 /* Header Section */
 .intro {
@@ -201,7 +199,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 120px 0 80px 0;
+	padding: 50px 0 80px 0;
 	background: #f6f6f6;
 }
 #about h3 {
@@ -236,7 +234,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 70px 0;
+	padding: 50px 0;
 	background: #4d9900;
 }
 #services .service-media {
@@ -350,23 +348,23 @@ ol.type li a:hover {
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
 	-o-background-size: cover;
 }
 #testimonials .overlay {
-	padding: 70px 0;
-	background: rgba(77, 153, 0, 0.75);
+	padding: 50px 0;
+	background: rgba(77, 153, 0, 0.8);
 }
 #testimonials h2 {
 	color: #fff;
+	font-weight: 500;
 }
 #testimonials hr {
 	background: rgba(255,255,255,0.6);
 }
 #testimonial p {
-	color: #FFFFFF;
+	color: white;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 32px;
 	text-align: left;
 }
@@ -522,4 +520,19 @@ label {
 		width: 155px;
 		height: 155px;
 	}
+}
+
+@media only screen and (min-width : 615px) and (max-width: 672px){
+	.col-xs-6{
+		margin-left: 2.5%;
+		width: 46% !important;
+	}
+
+	.col-md-3{
+		margin-left: 2.5%;
+		width: 46% !important;
+	}
+}
+.on{
+	display: none;
 }
