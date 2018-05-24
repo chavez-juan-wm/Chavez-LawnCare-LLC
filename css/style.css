@@ -199,7 +199,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 50px 0 80px 0;
+	padding: 45px 0 45px 0;
 	background: #f6f6f6;
 }
 #about h3 {
@@ -222,7 +222,7 @@ header .intro-text {
 #about .about-media img {
 	position: relative;
 	display: block;
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 #about .about-text, #about .about-desc {
@@ -234,7 +234,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 50px 0;
+	padding: 40px 0;
 	background: #4d9900;
 }
 #services .service-media {
@@ -269,12 +269,24 @@ header .intro-text {
 
 /* Portfolio Section */
 #portfolio {
-	padding: 50px 0;
+	padding: 40px 0;
 	background: #f6f6f6;
+}
+a.btn span{
+	font-size: 25px;
+	color: black;
+}
+a.mode span{
+	color:green
 }
 .categories {
 	text-align: center;
 }
+
+.dog a{
+	background: none;
+}
+
 ul.cat li {
 	display: inline-block;
 }
@@ -535,4 +547,57 @@ label {
 }
 .on{
 	display: none;
+}
+
+
+/* Bootstrap Fade out effect */
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+
+/*
+  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+  Need to override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+	.carousel-fade .carousel-inner > .item.next,
+	.carousel-fade .carousel-inner > .item.active.right {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.prev,
+	.carousel-fade .carousel-inner > .item.active.left {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+	.carousel-fade .carousel-inner > .item.next.left,
+	.carousel-fade .carousel-inner > .item.prev.right,
+	.carousel-fade .carousel-inner > .item.active {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
 }
