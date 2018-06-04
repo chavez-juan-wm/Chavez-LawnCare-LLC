@@ -10,7 +10,7 @@ function main() {
               target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
               if (target.length) {
                 $('html,body').animate({
-                  scrollTop: target.offset().top - 50
+                  scrollTop: target.offset().top - 80
                 }, 900);
                 return false;
               }
@@ -19,7 +19,7 @@ function main() {
 
         // Show Menu on Book
         $(window).bind('scroll', function() {
-            var navHeight = $(window).height() - 300;
+            var navHeight = $(window).height() - 570;
             if ($(window).scrollTop() > navHeight)
             {
                 $('#logo').fadeIn("slow");
@@ -81,6 +81,7 @@ function main() {
 
                     if(selector === '.grid'){
                         $("#carousel7").carousel('pause');
+                        $('.categories').fadeIn("slow");
                     }
                     else{
                         $('#carousel7').carousel({
@@ -88,6 +89,8 @@ function main() {
                             keyboard: true,
                             pause: "hover"
                         });
+
+                        $('.categories').fadeOut("fast");
                     }
 
                     $container.isotope({

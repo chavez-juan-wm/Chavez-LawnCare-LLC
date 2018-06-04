@@ -10,11 +10,11 @@ body, html {
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 24px;
 	color: #333;
 }
 h3, h4 {
-	font-size: 20px;
+	font-size: 10px;
 	font-weight: 400;
 	color: #333;
 }
@@ -83,10 +83,12 @@ hr {
 	border-color: rgba(231, 231, 231, 0);
 	padding: 15px 0 !important;
 }
+
 #menu a.navbar-brand {
 	font-size: 24px;
 	font-weight: 600;
 	color: #eee;
+	display: none;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -154,7 +156,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpeg) center center no-repeat;
+	background: url(../img/intro-bg.jpeg) center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -163,49 +165,48 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 .intro .overlay {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,70ad47+100&0.6+0,0.4+100 */
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(112,173,71,0.35) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(112,173,71,0.3) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(112,173,71,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(112,173,71,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#6670ad47', GradientType=0 ); /* IE6-9 */
 }
 .intro .fa {
-	font-size: 94px;
+	font-size: 4px;
 	margin-bottom: 10px;
 	color: #fff;
 }
 .intro h1 {
-	color: #fff;
-	font-size: 64px;
+	font-family: "Arial Black";
+	color: white;
+	font-size: 55px;
 	font-weight: 700;
 	letter-spacing: -1px;
 	margin-top: 20px;
 	margin-bottom: 10px;
+	text-shadow: 1px 0 0 #2e2f30, 1px -1px 0 #2e2f30, 0 1px 0 #2e2f30, -1px 0 0 #2e2f30;
 }
 .intro p {
 	color: #fff;
 	font-size: 22px;
-	margin-top: 20px;
-	line-height: 28px;
-	margin-bottom: 40px;
+
 }
 .intro .btn-custom {
 	border-top: 1px solid rgba(255,255,255,0.4);
 	border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 header .intro-text {
-	padding-top: 250px;
-	padding-bottom: 350px;
+	padding-top: 180px;
+	padding-bottom: 300px;
 	text-align: center;
 }
 /* About Section */
 #about {
-	padding: 45px 0 45px 0;
+	padding: 30px 0 30px 0;
 	background: #f6f6f6;
 }
 #about h3 {
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: 600;
-	margin: 20px 0 0 0;
 }
 #about .about-text span {
 	color: #70ad47;
@@ -234,7 +235,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 40px 0;
+	padding: 30px 0;
 	background: #4d9900;
 }
 #services .service-media {
@@ -253,15 +254,17 @@ header .intro-text {
 }
 #services h2 {
 	color: #fff;
+	font-size: 28px;
 }
 #services h3 {
 	color: #fff;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 400;
 	padding: 5px 0;
 }
 #services p {
 	color: rgba(255,255,255,0.9);
+	font-size: 15px;
 }
 #services hr {
 	background: rgba(255,255,255,0.6);
@@ -269,8 +272,11 @@ header .intro-text {
 
 /* Portfolio Section */
 #portfolio {
-	padding: 40px 0;
+	padding: 30px 0;
 	background: #f6f6f6;
+}
+#portfolio h2{
+	font-size: 26px;
 }
 a.btn span{
 	font-size: 25px;
@@ -281,6 +287,7 @@ a.mode span{
 }
 .categories {
 	text-align: center;
+	display: none;
 }
 
 .dog a{
@@ -296,7 +303,7 @@ ol.type li {
 }
 ol.type li a {
 	color: #555;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	padding: 8px 16px;
 	background: #e6e6e6;
@@ -363,12 +370,13 @@ ol.type li a:hover {
 	-o-background-size: cover;
 }
 #testimonials .overlay {
-	padding: 50px 0;
+	padding: 30px 0;
 	background: rgba(77, 153, 0, 0.8);
 }
 #testimonials h2 {
 	color: #fff;
 	font-weight: 500;
+	font-size: 26px;
 }
 #testimonials hr {
 	background: rgba(255,255,255,0.6);
@@ -405,7 +413,7 @@ ol.type li a:hover {
 }
 /* Contact Section */
 #contact {
-	padding: 50px 0;
+	padding: 30px 0;
 	background: #F6F6F6;
 }
 #contact .section-title p {
@@ -532,23 +540,28 @@ label {
 		width: 155px;
 		height: 155px;
 	}
+	header .intro-text {
+		padding-top: 95px;
+		padding-bottom: 85px;
+		text-align: center;
+	}
+	.intro h1 {
+		font-size: 46px;
+		font-weight: 300;
+	}
 }
 
 @media only screen and (min-width : 615px) and (max-width: 672px){
 	.col-xs-6{
-		margin-left: 2.5%;
-		width: 46% !important;
+		margin-left: 4.5%;
+		width: 42% !important;
 	}
 
 	.col-md-3{
-		margin-left: 2.5%;
-		width: 46% !important;
+		margin-left: 4.5%;
+		width: 42% !important;
 	}
 }
-.on{
-	display: none;
-}
-
 
 /* Bootstrap Fade out effect */
 .carousel-fade .carousel-inner .item {
