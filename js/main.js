@@ -115,12 +115,12 @@ function main() {
 
         // Testimonial Slider
         $(document).ready(function() {
-          $("#testimonial").owlCarousel({
-            navigation : false, // Show next and prev buttons
-            slideSpeed : 150,
-            paginationSpeed : 400,
-            singleItem:true
-        });
+            $('.owl-carousel').owlCarousel({
+                margin: 10,
+                loop: true,
+                nav: false,
+                items: 1
+            });
 
             $('#carousel7').carousel({
                 interval: 4000,
