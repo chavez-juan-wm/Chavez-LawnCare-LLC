@@ -19,7 +19,7 @@ function main() {
 
         // Show Menu on Book
         $(window).bind('scroll', function() {
-            var navHeight = $(window).height() - 570;
+            var navHeight = $(window).height() - 350;
             if ($(window).scrollTop() > navHeight)
             {
                 $('#logo').fadeIn("slow");
