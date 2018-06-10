@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b51b0b4-8544-4c4b-a2cb-e6ea51b2afc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mailer/contact_me.php" afterPath="$PROJECT_DIR$/mailer/contact_me.php" />
-    </list>
+    <list default="true" id="7b51b0b4-8544-4c4b-a2cb-e6ea51b2afc8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +14,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="612">
               <caret line="506" column="16" lean-forward="false" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#10;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -109,8 +105,8 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/mailer/contact_me.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -128,7 +124,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="MAMP PHP" />
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="148" />
     <option name="width" value="1440" />
     <option name="height" value="792" />
@@ -156,11 +152,6 @@
             <path>
               <item name="Chavez-LawnCare" type="b2602c69:ProjectViewProjectNode" />
               <item name="Chavez-LawnCare" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Chavez-LawnCare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chavez-LawnCare" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mailer" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -222,15 +213,15 @@
       <workItem from="1527212927106" duration="2099000" />
       <workItem from="1527356502041" duration="800000" />
       <workItem from="1528144479236" duration="8859000" />
-      <workItem from="1528599920605" duration="87000" />
+      <workItem from="1528599920605" duration="187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88100000" />
+    <option name="totallyTimeSpent" value="88200000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="148" width="1440" height="792" extended-state="1" />
+    <frame x="0" y="148" width="1440" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -388,10 +379,10 @@
         <state relative-caret-position="15">
           <caret line="108" column="36" lean-forward="false" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
           <folding>
-            <marker date="1522030201563" expanded="true" signature="3299:3306" ph="×" />
-            <marker date="1522030201563" expanded="true" signature="4073:4080" ph="×" />
-            <marker date="1522030201563" expanded="true" signature="5349:5356" ph="×" />
-            <marker date="1522030201563" expanded="true" signature="6075:6082" ph="×" />
+            <marker date="1528600188986" expanded="true" signature="3299:3306" ph="×" />
+            <marker date="1528600188986" expanded="true" signature="4073:4080" ph="×" />
+            <marker date="1528600188986" expanded="true" signature="5349:5356" ph="×" />
+            <marker date="1528600188986" expanded="true" signature="6075:6082" ph="×" />
           </folding>
         </state>
       </provider>
@@ -449,7 +440,7 @@
         <state relative-caret-position="120">
           <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -487,7 +478,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
+        <state relative-caret-position="612">
           <caret line="506" column="16" lean-forward="false" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#10;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
