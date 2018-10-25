@@ -1,3 +1,8 @@
+@font-face {
+	font-family: SpecialElite;
+	src: url(../fonts/SpecialElite.ttf);
+}
+
 body, html {
 	font-family: 'Open Sans', sans-serif;
 	text-rendering: optimizeLegibility !important;
@@ -7,6 +12,12 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+
+#map {
+	height: 350px;
+	width: 100%;
+}
+
 h2 {
 	margin: 0 0 20px 0;
 	font-weight: 600;
@@ -26,10 +37,7 @@ h5 {
 p {
 	font-size: 15px;
 }
-p.intro {
-	margin: 12px 0 0;
-	line-height: 24px;
-}
+
 a {
 	color: #6aaf08;
 	font-weight: 400;
@@ -129,7 +137,7 @@ hr {
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #337ab7;
-	padding: 14px 20px;
+	padding: 8px 14px;
 	letter-spacing: 1px;
 	margin: 0;
 	font-size: 17px;
@@ -176,27 +184,18 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #fff;
 }
 .intro h1 {
-	font-family: "Arial Black";
+	font-family: SpecialElite;
 	color: white;
 	font-size: 55px;
 	font-weight: 700;
 	letter-spacing: -1px;
 	margin-top: 20px;
-	margin-bottom: 10px;
-	text-shadow: 1px 0 0 #2e2f30, 1px -1px 0 #2e2f30, 0 1px 0 #2e2f30, -1px 0 0 #2e2f30;
-}
-.intro p {
-	color: #fff;
-	font-size: 22px;
-
-}
-.intro .btn-custom {
-	border-top: 1px solid rgba(255,255,255,0.4);
-	border-bottom: 1px solid rgba(255,255,255,0.4);
+	margin-bottom: 20px;
+	text-shadow: 1px 0 0 #2e2f30, 1px -1px 1px #2e2f30, 1px 1px 1px #2e2f30, -1px 1px 1px #2e2f30;
 }
 header .intro-text {
 	padding-top: 180px;
-	padding-bottom: 300px;
+	padding-bottom: 200px;
 	text-align: center;
 }
 /* About Section */
@@ -208,30 +207,15 @@ header .intro-text {
 	font-size: 30px;
 	font-weight: 600;
 }
-#about .about-text span {
-	color: #70ad47;
-	font-weight: 700;
-	letter-spacing: -1px;
-}
-#about hr {
-	margin-left: 0;
-	margin-bottom: 40px;
-}
-#about .btn {
-	margin-top: 40px;
-}
-#about .about-media img {
-	position: relative;
-	display: block;
-	max-width: 100%;
-	height: auto;
+#about .about-text p{
+	font-size: 16px;
 }
 #about .about-text, #about .about-desc {
 	margin-bottom: 40px;
 }
 #about p {
-	line-height: 30px;
-	margin-top: 20px;
+	line-height: 38px;
+
 }
 /* Services Section */
 #services {
@@ -243,8 +227,8 @@ header .intro-text {
 }
 #services .service-media img {
 	position: relative;
-	width: 245px;
-	height: 245px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	border: 10px solid rgba(255,255,255,0.1);
 }
@@ -272,93 +256,14 @@ header .intro-text {
 
 /* Portfolio Section */
 #portfolio {
-	padding: 30px 0;
+	padding: 20px 0;
 	background: #f6f6f6;
 }
 #portfolio h2{
 	font-size: 26px;
 }
-a.btn span{
-	font-size: 25px;
-	color: black;
-}
-a.mode span{
-	color:green
-}
-.categories {
-	text-align: center;
-	display: none;
-}
-
-.dog a{
-	background: none;
-}
-
-ul.cat li {
-	display: inline-block;
-}
-ol.type li {
-	display: inline-block;
-	margin: 0 10px 40px 10px;
-}
-ol.type li a {
-	color: #555;
-	font-size: 14px;
-	font-weight: 400;
-	padding: 8px 16px;
-	background: #e6e6e6;
-	border: 0;
-	border-radius: 4px;
-	letter-spacing: 1px;
-
-	transition: all 0.3s;
-}
-ol.type li a.active {
-	background: #337ab7;
-	color: #fff;
-}
-ol.type li a:hover {
-	background: #337ab7;
-	color: #fff;
-}
-.isotope-item {
-	z-index: 2
-}
-.isotope-hidden.isotope-item {
-	z-index: 1
-}
-.isotope, .isotope .isotope-item {
-	/* change duration value to whatever you like */
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	transition-duration: 0.8s;
-}
-.isotope-item {
-	margin-right: -1px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-.isotope {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	transition-property: height, width;
-}
-.isotope .isotope-item {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition-property: -webkit-transform, opacity;
-	-moz-transition-property: -moz-transform, opacity;
-	transition-property: transform, opacity;
-}
 .portfolio-item {
-	margin: 15px 0;
-}
-.portfolio-item .hover-bg {
-	overflow: hidden;
-	position: relative;
-	margin: 0 auto;
+	margin: 25px 0;
 }
 
 /* Testimonials Section */
@@ -550,6 +455,21 @@ label {
 		font-weight: 300;
 	}
 }
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+	.slider .carousel {
+		width: 600px;
+		height: auto;
+	}
+	.slider{
+		margin-bottom: 30px;
+		padding-left: 80px;
+
+	}
+	#map{
+		margin-left: 50px;
+	}
+}
 
 @media only screen and (min-width : 615px) and (max-width: 672px){
 	.col-xs-6{
@@ -588,6 +508,7 @@ label {
 .carousel-fade .carousel-control {
 	z-index: 2;
 }
+
 
 /*
   WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
