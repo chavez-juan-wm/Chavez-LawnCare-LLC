@@ -17,19 +17,6 @@ function main() {
             }
           });
 
-        // Show logo on navbar
-        $(window).bind('scroll', function() {
-            var navHeight = $(window).height() - 400;
-            if ($(window).scrollTop() > navHeight)
-            {
-                $('#logo').fadeIn("slow");
-            }
-            else
-            {
-                $('#logo').fadeOut("slow");
-            }
-        });
-
         $('body').scrollspy({
             target: '.navbar-default',
             offset: 80
