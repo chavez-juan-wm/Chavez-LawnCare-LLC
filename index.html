@@ -23,429 +23,426 @@
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/nivo-lightbox/1.2.0/nivo-lightbox.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
+        <!-- Mapbox -->
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
-
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>
     </head>
 
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <!-- Navigation -->
         <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-              <a id="logo" class="navbar-brand on page-scroll" href="#page-top">Chavez LawnCare LLC</a>
-            </div>
+                    <a id="logo" class="navbar-brand on page-scroll" href="#page-top">Chavez LawnCare LLC</a>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="page-scroll">About</a></li>
-                <li><a href="#services" class="page-scroll">Services</a></li>
-                <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
-                <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
-                <li><a href="#contact" class="page-scroll">Contact</a></li>
-              </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about" class="page-scroll">About</a></li>
+                        <li><a href="#services" class="page-scroll">Services</a></li>
+                        <li><a href="#portfolio" class="page-scroll">Gallery</a></li>
+                        <li><a href="#testimonials" class="page-scroll">Testimonials</a></li>
+                        <li><a href="#contact" class="page-scroll">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
+            <!-- /.container-fluid -->
         </nav>
 
         <!-- Header -->
         <header id="header">
-          <div class="intro">
-            <div class="overlay">
-              <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 intro-text">
-                        <h1>Chavez LawnCare LLC</h1>
-                        <!--<a href="#contact" class="page-scroll btn btn-custom">Free Quote</a>-->
+            <div class="intro">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 intro-text">
+                                <h1>Chavez LawnCare LLC</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
-              </div>
             </div>
-          </div>
         </header>
 
         <!-- About Section -->
         <div id="about">
-          <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1 section-title text-center">
-                    <h2>About Us</h2>
-                    <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 section-title text-center">
+                        <h2>About Us</h2>
+                        <hr>
+                    </div>
+
+                    <div class="col-xs-12 col-md-7">
+                        <div class="about-text">
+                            <p>
+                                Chavez LawnCare LLC, is an experienced family owned and operated small business,
+                                that specializes in working on a one-to-one basis with homeowners to help bring out
+                                the beauty of their outdoors.
+                            </p>
+                            <p style="margin-top: 25px">
+                                Whatever your landscaping need--whether it's a consultation for something new and original,
+                                an updated look for an existing space, or something other worldly altogether--we can help
+                                you get there.
+                            </p>
+                            <p style="margin-top: 25px">
+                                We take pride in servicing the West Valley Phoenix Area and would like to thank you for
+                                your time and interest in our small business.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-xs-12">
+                        <div id='map'></div>
+                    </div>
+
                 </div>
-
-              <div class="col-xs-12 col-md-7">
-                <div class="about-text">
-                    <p>
-                        Chavez LawnCare LLC, is an experienced family owned and operated small business,
-                        that specializes in working on a one-to-one basis with homeowners to help bring out
-                        the beauty of their outdoors.
-                    </p>
-                    <p style="margin-top: 25px">
-                        Whatever your landscaping need--whether it's a consultation for something new and original,
-                        an updated look for an existing space, or something other worldly altogether--we can help
-                        you get there.
-                    </p>
-                    <p style="margin-top: 25px">
-                        We take pride in servicing the West Valley Phoenix Area and would like to thank you for
-                        your time and interest in our small business.
-                    </p>
-
-                </div>
-              </div>
-
-                <div class="col-md-5 col-xs-12">
-                    <div id='map'></div>
-                </div>
-
             </div>
-          </div>
         </div>
 
         <!-- Services Section -->
         <div id="services">
-          <div class="container">
-            <div class="col-md-10 col-md-offset-1 section-title text-center">
-              <h2>Our Services</h2>
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-md-3 col-xs-6 text-center">
-                <div class="service-media"> <img src="img/services/service-1.jpeg" alt=" "> </div>
-                <div class="service-desc">
-                  <h3>Lawn Care</h3>
-                  <p>Mowing, Edging, Fertilizing</p>
+            <div class="container">
+                <div class="col-md-10 col-md-offset-1 section-title text-center">
+                    <h2>Our Services</h2>
+                    <hr>
                 </div>
-              </div>
-              <div class="col-md-3 col-xs-6 text-center">
-                <div class="service-media"> <img src="img/services/service-3.jpg" alt=" "> </div>
-                <div class="service-desc">
-                  <h3>Weed Control</h3>
-                  <p>Pre-Emergent, Post-Emergent</p>
-                </div>
-              </div>
-                <div class="col-md-3 col-xs-6 text-center">
-                    <div class="service-media"> <img src="img/services/service-2.jpg" alt=" "> </div>
-                    <div class="service-desc">
-                        <h3>Irrigation</h3>
-                        <p>Sprinkler Systems, Irrigation Timer, Drip System</p>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-1.jpeg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Lawn Care</h3>
+                            <p>Mowing, Edging, Fertilizing</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-3.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Weed Control</h3>
+                            <p>Pre-Emergent, Post-Emergent</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-2.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Irrigation</h3>
+                            <p>Sprinkler Systems, Irrigation Timer, Drip System</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-5.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Pruning</h3>
+                            <p>Trim Shrubs, Palm Trees, Small Trees, Etc</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-xs-6 text-center">
-                    <div class="service-media"> <img src="img/services/service-5.jpg" alt=" "> </div>
-                    <div class="service-desc">
-                        <h3>Pruning</h3>
-                        <p>Trim Shrubs, Palm Trees, Small Trees, etc</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-3 col-xs-6 text-center">
-                  <div class="service-media"> <img src="img/services/service-7.jpg" alt=" "> </div>
-                  <div class="service-desc">
-                      <h3>Tree Care</h3>
-                      <p>Ensure optimum tree health</p>
-                  </div>
-              </div>
-                <div class="col-md-3 col-xs-6 text-center">
-                    <div class="service-media"> <img src="img/services/service-6.jpg" alt=" "> </div>
-                    <div class="service-desc">
-                        <h3>Planting/Removing</h3>
-                        <p>Cacti, Shrubs, Small Trees, etc</p>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-7.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Tree Care</h3>
+                            <p>Ensure Optimum Tree Health</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-xs-6 text-center">
-                    <div class="service-media"> <img src="img/services/service-4.jpg" alt=" "> </div>
-                    <div class="service-desc">
-                        <h3>Garden Lighting Installation</h3>
-                        <p>Spruce up the lighting in your garden</p>
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-6.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Planting/Removing</h3>
+                            <p>Cacti, Shrubs, Small Trees, Etc</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 col-xs-6 text-center">
-                    <div class="service-media"> <img src="img/services/service-8.jpg" alt=" "> </div>
-                    <div class="service-desc">
-                        <h3>Maintenance</h3>
-                        <p>Spring/Fall Clean Ups, Weeding, Haul Away</p>
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-4.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Garden Lighting Installation</h3>
+                            <p>Spruce Up the Lighting in Your Garden</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 text-center">
+                        <div class="service-media"><img src="img/services/service-8.jpg" alt=" "></div>
+                        <div class="service-desc">
+                            <h3>Maintenance</h3>
+                            <p>Spring/Fall Clean Ups, Weeding, Haul Away</p>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
         </div>
 
         <!-- Gallery Section -->
         <div id="portfolio">
-          <div class="container">
-            <div class="section-title text-center center">
-              <h2>Project Gallery</h2>
-              <hr>
-            </div>
+            <div class="container">
+                <div class="section-title text-center center">
+                    <h2>Project Gallery</h2>
+                    <hr>
+                </div>
 
-            <div class="row">
-              <div class="portfolio-items">
-                  <div class="col-md-8 col-md-offset-2 col-xs-12 slider">
-                      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-                          <div class="carousel-inner">
-                              <div class="item active">
-                                  <img class="img-responsive" src="img/portfolio/lawn_1.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/lawn-2.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/leak_pre.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/leak.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/maintainance_pre_1.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/maintainance_1.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/removal_pre.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/removal.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/tree_care_pre.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/tree_care.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/valve.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/weed_removal_pre_1.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/weed_removal_1.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/weed_removal_pre_2.jpg" alt="">
-                              </div>
-                              <div class="item">
-                                  <img class="img-responsive" src="img/portfolio/weed_removal_2.jpg" alt="">
-                              </div>
-                          </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive" src="img/portfolio/lawn_1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/lawn-2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/leak_pre.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/leak.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/maintainance_pre_1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/maintainance_1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/removal_pre.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/removal.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/tree_care_pre.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/tree_care.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/valve.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/weed_removal_pre_1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/weed_removal_1.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/weed_removal_pre_2.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="img-responsive" src="img/portfolio/weed_removal_2.jpg" alt="">
+                                </div>
+                            </div>
 
-                          <!--Carousel controls-->
-                          <a class="carousel-control left" href="#carousel" role="button" data-slide="prev">
-                              <span class="glyphicon glyphicon-chevron-left"></span>
-                              <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="carousel-control right" href="#carousel" role="button" data-slide="next">
-                              <span class="glyphicon glyphicon-chevron-right"></span>
-                              <span class="sr-only">Next</span>
-                          </a>
-                      </div>
-                  </div>
-              </div>
+                            <!--Carousel controls-->
+                            <a class="carousel-control left" href="#carousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control right" href="#carousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
         <!-- Testimonials Section -->
         <div id="testimonials" class="text-center">
-          <div class="overlay">
-            <div class="container">
-              <div class="section-title">
-                <h2>Testimonials</h2>
-                <hr>
-              </div>
-              <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div id="testimonial" class="owl-carousel owl-theme owl-loaded">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage">
-                                <div class="owl-item">
-                                    <p>
-                                       "Omar was amazing!  He had the job done in no time. Same day service!! I was shocked! He also sent before and after
-                                        pics to me. His services are totally affordable. Very polite and thorough as well! Highly recommended!"
-                                    </p>
-                                    <br>
-                                    <p style="text-align: center;">
-                                        - Chelsey G
-                                    </p>
-                                </div>
-                                <div class="owl-item">
-                                    <p>
-                                        "Excellent, knowledgeable service. My lawn was covered in weeds last Spring; since Omar Chavez and his team treated it,
-                                        I haven't needed to pick weeds repeatedly. I love that he offers seasonal cleanup for low maintenance landscapes."
-                                    </p> <br>
-                                    <p style="text-align: center;">
-                                        - Johan B
-                                    </p>
-                                </div>
-                                <div class="owl-item">
-                                    <p>
-                                        "Family owned and operated, does an awesome job at a reasonable price, have used this service multiple times for
-                                        landscaping and sprinkler system repair. Very professional and on time. You cannot go wrong hiring this company.
-                                        Omar and his crew are the best!"
-                                    </p> <br>
-                                    <p style="text-align: center;">
-                                        - Joann O
-                                    </p>
-                                </div>
-                                <div class="owl-item">
-                                    <p style="text-align: center">
-                                        You can find more reviews in our <a href="https://www.yelp.com/biz/chavez-lawncare-llc-goodyear-2" style="color: #5ec6ff">Yelp</a>
-                                    </p>
+            <div class="overlay">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Testimonials</h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div id="testimonial" class="owl-carousel owl-theme owl-loaded">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage">
+                                        <div class="owl-item">
+                                            <p>
+                                                "Omar was amazing! He had the job done in no time. Same day service!! I was
+                                                shocked! He also sent before and after
+                                                pics to me. His services are totally affordable. Very polite and thorough as
+                                                well! Highly recommended!"
+                                            </p>
+                                            <br>
+                                            <p style="text-align: center;">
+                                                - Chelsey G
+                                            </p>
+                                        </div>
+                                        <div class="owl-item">
+                                            <p>
+                                                "Excellent, knowledgeable service. My lawn was covered in weeds last Spring;
+                                                since Omar Chavez and his team treated it,
+                                                I haven't needed to pick weeds repeatedly. I love that he offers seasonal
+                                                cleanup for low maintenance landscapes."
+                                            </p> <br>
+                                            <p style="text-align: center;">
+                                                - Johan B
+                                            </p>
+                                        </div>
+                                        <div class="owl-item">
+                                            <p>
+                                                "Family owned and operated, does an awesome job at a reasonable price, have used
+                                                this service multiple times for
+                                                landscaping and sprinkler system repair. Very professional and on time. You
+                                                cannot go wrong hiring this company.
+                                                Omar and his crew are the best!"
+                                            </p> <br>
+                                            <p style="text-align: center;">
+                                                - Joann O
+                                            </p>
+                                        </div>
+                                        <div class="owl-item">
+                                            <p style="text-align: center">
+                                                You can find more reviews in our <a href="https://www.yelp.com/biz/chavez-lawncare-llc-goodyear-2" style="color: #5ec6ff">Yelp</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
 
         <!-- Contact Section -->
         <div id="contact">
-          <div class="container">
-            <div class="section-title text-center">
-              <h2>Contact</h2>
-              <hr>
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Contact</h2>
+                    <hr>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-md-9">
+                        <h3 style="text-align: center">Leave us a message</h3>
+                        <hr style="background: #ddd;">
+                        <form name="sentMessage" id="contactForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="name">Name <span style="color: red">*</span></label>
+                                        <input type="text" id="name" class="form-control" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="form-group">
+                                        <label for="phone">Phone <span style="color: red">*</span></label>
+                                        <input type="text" id="phone" class="form-control" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="email">Email <span style="color: red">*</span></label>
+                                        <input type="email" id="email" class="form-control" required>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="inputAddress">Address</label>
+                                        <input onfocus="clearText('.address')" onblur="clearAll()" type="text" class="form-control" id="inputAddress">
+                                        <p class="text-danger address"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-6 col-xs-5">
+                                    <label for="inputCity">City</label>
+                                    <input onfocus="clearText('.city')" onblur="clearAll()" type="text" class="form-control" id="inputCity">
+                                    <p class="text-danger city"></p>
+                                </div>
+                                <div class="form-group col-md-2 col-xs-3">
+                                    <label for="inputState">State</label>
+                                    <input type="text" readonly class="form-control" style="padding-right: 10px;" id="inputState" value="AZ">
+                                </div>
+                                <div class="form-group col-md-4 col-xs-4">
+                                    <label for="inputZip">Zip</label>
+                                    <input onfocus="clearText('.zip')" onblur="clearAll()" type="text" class="form-control" id="inputZip">
+                                    <p class="text-danger zip"></p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-12 col-xs-12">
+                                    <label for="message">Message <span style="color: red">*</span></label>
+                                    <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-12 col-xs-12">
+                                    <input class="pull-left" type="checkbox" id="gridCheck">
+                                    <label for="gridCheck" style="margin-left: 10px">Check here to receive email
+                                        updates </label>
+                                </div>
+                            </div>
+
+                            <div id="success"></div>
+                            <div style="text-align: left">
+                                <button type="submit" class="btn btn-custom">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="col-md-10 col-md-offset-1 contact-info">
+                            <h3>Working Hours</h3>
+                            <hr>
+                            <div class="contact-item">
+                                <p>Monday - Friday: <br>8:00 AM - 3:00 PM</p><br>
+                                <p>Saturday - Sunday: CLOSED</p>
+                            </div>
+
+                            <h3>Contact Info</h3>
+                            <hr>
+                            <div class="contact-item">
+                                <p>Phone: 623-221-5223</p> <br>
+                                <p>Email:</p>
+                                <a href="mailto:omar@chavezlawncare.com" target="_top">omar@chavezlawncare.com</a>
+                                <a href="mailto:grace@chavezlawncare.com" target="_top">grace@chavezlawncare.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-              <div class="row text-center">
-                  <div class="col-md-9">
-                      <h3 style="text-align: center">Leave us a message</h3><hr style="background: #ddd;">
-                      <form name="sentMessage" id="contactForm" novalidate>
-                          <div class="row">
-                              <div class="col-md-4 col-xs-6">
-                                  <div class="form-group">
-                                      <label for="name">Name <span style="color: red">*</span></label>
-                                      <input type="text" id="name" class="form-control" required>
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-xs-6">
-                                  <div class="form-group">
-                                      <label for="phone">Phone <span style="color: red">*</span></label>
-                                      <input type="text" id="phone" class="form-control" required>
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                              <div class="col-md-4 col-xs-12">
-                                  <div class="form-group">
-                                      <label for="email">Email <span style="color: red">*</span></label>
-                                      <input type="email" id="email" class="form-control" required>
-                                      <p class="help-block text-danger"></p>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="row">
-                              <div class="col-md-12 col-xs-12">
-                                  <div class="form-group">
-                                      <label for="inputAddress">Address</label>
-                                      <input onfocus="clearText('.address')" onblur="clearAll()" type="text" class="form-control" id="inputAddress">
-                                      <p class="text-danger address"></p>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <div class="row">
-                              <div class="form-group col-md-6 col-xs-5">
-                                  <label for="inputCity">City</label>
-                                  <input onfocus="clearText('.city')" onblur="clearAll()" type="text" class="form-control" id="inputCity">
-                                  <p class="text-danger city"></p>
-                              </div>
-                              <div class="form-group col-md-2 col-xs-3">
-                                  <label for="inputState">State</label>
-                                  <input type="text" readonly class="form-control" style="padding-right: 10px;" id="inputState" value="AZ">
-                              </div>
-                              <div class="form-group col-md-4 col-xs-4">
-                                  <label for="inputZip">Zip</label>
-                                  <input onfocus="clearText('.zip')" onblur="clearAll()" type="text" class="form-control" id="inputZip">
-                                  <p class="text-danger zip"></p>
-                              </div>
-                          </div>
-
-                          <div class="row">
-                              <div class="form-group col-md-12 col-xs-12">
-                                  <label for="message">Message <span style="color: red">*</span></label>
-                                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                                  <p class="help-block text-danger"></p>
-                              </div>
-                          </div>
-
-                          <div class="row">
-                              <div class="form-group col-md-12 col-xs-12">
-                                  <input class="pull-left" type="checkbox" id="gridCheck">
-                                  <label for="gridCheck" style="margin-left: 10px">Check here to receive email updates </label>
-                              </div>
-                          </div>
-
-
-                          <div id="success"></div>
-                          <div style="text-align: left">
-                              <button type="submit" class="btn btn-custom">Send Message</button>
-                          </div>
-                      </form>
-                  </div>
-
-                  <div class="col-md-3">
-                      <div class="col-md-10 col-md-offset-1 contact-info">
-                              <h3>Working Hours</h3>
-                              <hr>
-                              <div class="contact-item">
-                                  <p>Monday - Friday: <br>8:00 AM - 3:00 PM</p><br>
-                                  <p>Saturday - Sunday: CLOSED</p>
-                              </div>
-
-                              <h3>Contact Info</h3>
-                              <hr>
-                              <div class="contact-item">
-                                  <p>Phone: 623-221-5223</p> <br>
-                                  <p>Email:</p>
-                                  <a href="mailto:omar@chavezlawncare.com" target="_top">omar@chavezlawncare.com</a>
-                                  <a href="mailto:grace@chavezlawncare.com" target="_top">grace@chavezlawncare.com</a>
-                              </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
         </div>
 
         <!-- Footer Section -->
         <div id="footer">
-          <div class="container text-center">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="social">
-                <ul>
-                  <li><a href="https://www.yelp.com/biz/chavez-lawncare-llc-goodyear-2"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-              <p>&copy; 2018 Chavez LawnCare LLC. Designed by Manny Chavez</p>
+            <div class="container text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.yelp.com/biz/chavez-lawncare-llc-goodyear-2"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>&copy; 2018 Chavez LawnCare LLC. Designed by Manny Chavez</p>
+                </div>
             </div>
-          </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.0/smooth-scroll.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/nivo-lightbox/1.2.0/nivo-lightbox.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
