@@ -9,7 +9,7 @@ function main() {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - 74
+                        scrollTop: target.offset().top - 73
                     }, 900);
                     return false;
                 }
@@ -18,7 +18,7 @@ function main() {
 
         $('body').scrollspy({
             target: '.navbar-default',
-            offset: 74
+            offset: 75
         });
 
         // Hide nav on click
